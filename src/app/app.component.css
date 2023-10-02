@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rock+Salt&display=swap');
+
 .qrcodeImage {
-    padding-top: 120px;
+    padding-top: 10vw;
     width: 90%;
     margin: auto;
     text-align: center;
 }
 
-.iText,
-.iButton {
-    color: #06c;
+.iText {
+    font-family: Poppins;
+    color: #0d6efd;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     width: 300px;
+    height: 67px;
     margin: 0 auto;
     display: block;
     text-align: center;
-    border: 3px solid #06c;
+    border: 3px solid #0d6efd;
     border-radius: 15px;
 }
 
@@ -22,15 +25,26 @@
     display: inline-block;
     width: 0;
     height: 1em;
-    background-color: black;
+    background-color: #0d6efd;
     animation: blinkCursor 1s infinite;
 }
 
-a {
-    color: #06c;
-    text-decoration: none;
+.btn {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
 }
 
+.container {
+    font-family: Poppins;
+    margin: auto;
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .qrcodeImage {
@@ -40,8 +54,7 @@ a {
     }
 
     .iText,
-    .iButton {
-        font-size: 16px;
+    .btn {
         padding: 10px;
     }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SafeValue } from '@angular/platform-browser';
 
 @Component({
@@ -6,9 +6,15 @@ import { SafeValue } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'AngularQRCodeGenerator';
+export class AppComponent implements OnInit {
 
+  currentYear!: number;
+
+  ngOnInit() {
+    this.currentYear = new Date().getFullYear();
+  }
+
+  title = 'AngularQRCodeGenerator';
   qrdata = '';
   qrCodeDownloadLink: SafeValue = '';
 
