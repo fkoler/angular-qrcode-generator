@@ -1,0 +1,47 @@
+.qrcodeImage {
+    padding-top: 120px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.iText,
+.iButton {
+    color: #06c;
+    font-weight: 700;
+    font-size: 40px;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border: 3px solid #06c;
+    border-radius: 15px;
+}
+
+.iText::before {
+    display: inline-block;
+    width: 0;
+    height: 1em;
+    background-color: black;
+    animation: blinkCursor 1s infinite;
+}
+
+a {
+    color: #06c;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .qrcodeImage {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .iText,
+    .iButton {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
