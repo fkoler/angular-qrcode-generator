@@ -29,6 +29,16 @@
     animation: blinkCursor 1s infinite;
 }
 
+::placeholder {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #0d6efd;
+}
+
+.force-opaque::placeholder {
+    opacity: 1;
+}
+
 .btn {
     font-family: Poppins;
     font-weight: 700;
